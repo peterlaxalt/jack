@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Brown';
+    font-style: normal;
+    font-weight: 200;
+    //src: local("Brown"), local("Brown-Regular"), url("../assets/fonts/Brown-Regular.woff2") format("woff2");
+    src: url("../assets/fonts/Brown-Regular.woff2") format("woff2"), local("Brown-Regular");
+}
+
+@font-face {
+    font-family: 'Brown';
+    font-style: normal;
+    font-weight: 400;
+    //src: local("Brown"), local("Brown-Semibold"), url("../assets/fonts/Brown-Semibold.woff2") format("woff2");
+    src: url("../assets/fonts/Brown-Semibold.woff2") format("woff2"), local("Brown-Semibold");
+}
+
+@font-face {
+    font-family: 'Brown';
+    font-style: normal;
+    font-weight: 600;
+    //src: local("Brown"), local("Brown-Bold"), url("../assets/fonts/Brown-Bold.woff2") format("woff2");
+    src: url("../assets/fonts/Brown-Bold.woff2") format("woff2"), local("Brown-Bold");
+}
+
+html, body {
+  font-family: 'Brown', 'Helvetica', sans-serif;
+}

@@ -375,3 +375,61 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
+
+@font-face {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/Brown-Regular.woff2") format("woff2"), local("Brown-Regular"); }
+@font-face {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Brown-Semibold.woff2") format("woff2"), local("Brown-Semibold"); }
+@font-face {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/Brown-Bold.woff2") format("woff2"), local("Brown-Bold"); }
+html, body {
+  font-family: 'Brown', 'Helvetica', sans-serif; }
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0px 20px; }
+  footer .content {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+    footer .content h1 {
+      font-size: 82px;
+      text-align: center;
+      border-bottom: 11px #ffffff solid;
+      display: inline-block;
+      margin: 0 auto; }
+    footer .content p {
+      padding-top: 15px;
+      font-size: 52px;
+      text-align: center; }
+  footer .lmnt-footer-social {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding-bottom: 10px; }
+    footer .lmnt-footer-social svg {
+      fill: #ffffff; }
