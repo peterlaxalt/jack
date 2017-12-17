@@ -394,8 +394,69 @@ textarea {
 html, body {
   font-family: 'Brown', 'Helvetica', sans-serif; }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  color: #ffffff;
+  z-index: 999; }
+  nav svg {
+    fill: #ffffff;
+    transform: scale(0.9);
+    transform-origin: center center;
+    transition: all 1s ease; }
+    nav svg:hover {
+      fill: #FF6C46;
+      transform: scale(1); }
+  nav .lmnt-nav-item {
+    padding: 10px; }
+    nav .lmnt-nav-item a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 24px;
+      position: relative; }
+      nav .lmnt-nav-item a.lmnt-nav-active:after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        bottom: -5px;
+        left: 0;
+        width: 95%;
+        background-color: #ffffff; }
+      nav .lmnt-nav-item a.lmnt-nav-link:before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        bottom: 46%;
+        left: 0;
+        width: 0%;
+        background-color: #ffffff;
+        transition: all .5s ease; }
+      nav .lmnt-nav-item a.lmnt-nav-link:hover:before {
+        width: 95%; }
+      nav .lmnt-nav-item a:hover {
+        color: #ffffff; }
+      nav .lmnt-nav-item a:active {
+        color: #ffffff; }
+      nav .lmnt-nav-item a:focus {
+        color: #ffffff; }
+      nav .lmnt-nav-item a:visited {
+        color: #ffffff; }
+
 footer {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -406,7 +467,8 @@ footer {
   margin: 0 auto;
   color: #ffffff;
   background-color: #000000;
-  padding: 0px 20px; }
+  padding: 0px 20px;
+  z-index: 1; }
   footer .content {
     max-width: 1080px;
     margin: 0 auto;
@@ -433,3 +495,11 @@ footer {
     padding-bottom: 10px; }
     footer .lmnt-footer-social svg {
       fill: #ffffff; }
+
+main {
+  position: relative;
+  background-color: #201D27;
+  color: #ffffff;
+  min-height: 100vh;
+  margin-bottom: 100vh;
+  z-index: 5; }
