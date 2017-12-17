@@ -1,7 +1,63 @@
 ---
-title: "Jack of All Trades"
+title: "Suttermade."
 layout: home
 description: "Make cool shit."
 ---
 
-main
+<div class="home-hero">
+
+  <div class="home-hero-top fadein-1-5-sec">
+    {{ page.description }}
+  </div>
+
+  <div class="content">
+    <a href="{{site.baseurl}}/projects.html">
+      <div class="home-hero-branding fadein-1-sec">
+        {% include svg-logo.html %}
+      </div>
+      <h1 class="fadein-3-sec">
+        {{ page.title }}
+      </h1>
+    </a>
+  </div>
+
+  <div class="home-hero-nav">
+    <ul>
+      <li class="fadein-2-sec">
+        <a href="{{site.baseurl}}/projects.html">
+          Projects
+        </a>
+      </li>
+      <li class="fadein-3-sec">
+        <a href="{{site.baseurl}}/about.html">
+          About
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="lmnt-home-hero-overlay">
+  </div>
+
+  <div class="home-hero-slider">
+    <div class="home-hero-slide" style="background-image:url('{{site.baseurl}}/assets/img-jack-burn.jpg');background-size:cover;background-repeat:no-repeat;">
+    </div>
+    <div class="home-hero-slide" style="background-image:url('https://source.unsplash.com/1000x1000/?cats');background-size:cover;background-repeat:no-repeat;">
+    </div>
+    <div class="home-hero-slide" style="background-image:url('https://source.unsplash.com/1000x1000/?dogs');background-size:cover;background-repeat:no-repeat;">
+    </div>
+  </div>
+
+</div>
+
+<script>
+$('.home-hero-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  autoplay: true,
+  speed: 400,
+  autoplaySpeed: 3000
+});
+</script>

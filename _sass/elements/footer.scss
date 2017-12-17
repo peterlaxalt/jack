@@ -16,6 +16,7 @@ footer {
   background-color:$clr-black;
   padding:0px $base-spacing*2;
   z-index:1;
+  cursor:pointer;
   .content {
     max-width:$base-max-width/1.5;
     margin:0 auto;
@@ -23,6 +24,11 @@ footer {
     flex-direction:column;
     align-content:center;
     justify-content:center;
+    transform:scale(1);
+    transition:all 1s ease;
+    &:hover {
+      transform:scale(1.15);
+    }
     h1 {
       font-size:82px;
       text-align:center;

@@ -3,6 +3,147 @@ main {
   background-color:$clr-gunmetal;
   color:$clr-white;
   min-height:100vh;
-  margin-bottom:100vh;
+  margin:0 auto 100vh auto;
   z-index:5;
+  width:100%;
+  max-width:$base-max-width;
+}
+
+.home-hero {
+  min-height:100vh;
+  position:relative;
+  width:100%;
+  .content {
+    z-index:500;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    width:100%;
+    transition:all 1s ease;
+    &:hover {
+      a {
+        color:$clr-hotmetal;
+      }
+      svg {
+        fill:$clr-hotmetal;
+      }
+      h1 {
+        border-bottom:11px $clr-hotmetal solid;
+      }
+    }
+    a {
+      color:$clr-white;
+      transition:all 1s ease;
+      &:visited {
+        color:$clr-white;
+      }
+      &:active {
+        color:$clr-white;
+      }
+      &:hover {
+        color:$clr-hotmetal;
+      }
+    }
+    h1 {
+      font-size:10vw;
+      border-bottom:11px $clr-white solid;
+      padding-top:$base-spacing*3;
+      padding-bottom:$base-spacing;
+      display:inline-block;
+      line-height:.6;
+      transition:all 1s ease;
+    }
+    svg {
+      fill:$clr-white;
+      transition:all 1s ease;
+      max-width:180;
+      width:100%;
+      height:180px;
+    }
+  }
+  .lmnt-home-hero-overlay {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color:rgba($clr-black, .7);
+    z-index:300;
+  }
+  .home-hero-slider {
+    position:absolute;
+    left:0;
+    top:0;
+    height:100vh;
+    width:100%;
+    pointer-events:none;
+    .home-hero-slide {
+      height:100vh;
+      width:100%;
+    }
+  }
+  .home-hero-top {
+    color:$clr-white;
+    top:0;
+    left:0;
+    right:0;
+    text-align:center;
+    padding-top:$base-spacing*2;
+    font-size:28px;
+    position:absolute;
+    z-index:500;
+  }
+  .home-hero-nav {
+    color:$clr-white;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align:center;
+    padding-bottom:$base-spacing*2;
+    font-weight:bold;
+    position:absolute;
+    z-index:500;
+    ul {
+      list-style-type:none;
+      margin:0;
+      padding:0;
+      li {
+        display:inline-block;
+        padding:0 $base-spacing*4;
+        a {
+          color:$clr-white;
+          text-decoration:none;
+          font-size:52px;
+          position:relative;
+          &:before {
+            content:'';
+            position:absolute;
+            height:3px;
+            bottom:46%;
+            left:0;
+            width:0%;
+            background-color:$clr-white;
+            transition:all .5s ease;
+          }
+          &:hover {
+            color:$clr-white;
+            &:before {
+              width:95%;
+            }
+          }
+          &:active {
+            color:$clr-white;
+          }
+          &:focus {
+            color:$clr-white;
+          }
+          &:visited {
+            color:$clr-white;
+          }
+        }
+      }
+    }
+  }
 }
