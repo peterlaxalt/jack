@@ -703,7 +703,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: #ff6c46;
         transition: all 1s ease;
         padding: 30px;
         opacity: 0; }
@@ -715,3 +715,44 @@ main {
           font-size: 11px; }
         .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay .lmnt-project-card-title {
           font-size: 24px; }
+
+.project-wrap .project-inner {
+  display: flex;
+  flex-direction: column; }
+
+.page-hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  position: relative; }
+  .page-hero .page-hero-scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding-bottom: 30px; }
+    .page-hero .page-hero-scroll-down span:first-child {
+      padding-bottom: 20px; }
+    .page-hero .page-hero-scroll-down svg {
+      fill: none;
+      stroke-width: 4px;
+      stroke: #ffffff; }
+  .page-hero .page-hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .page-hero h1 {
+    font-size: 15vh;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 11px #ffffff solid;
+    max-width: 60%; }
