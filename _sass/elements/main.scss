@@ -31,6 +31,9 @@ main {
       }
       h1 {
         border-bottom:11px $clr-hotmetal solid;
+        @media (max-width:676px) {
+          border-bottom:5px solid $clr-hotmetal;
+        }
       }
     }
     a {
@@ -54,6 +57,9 @@ main {
       display:inline-block;
       line-height:.6;
       transition:all 1s ease;
+      @media (max-width:676px) {
+        border-bottom:5px solid $clr-hotmetal;
+      }
     }
     svg {
       fill:$clr-white;
@@ -94,6 +100,9 @@ main {
     font-size:28px;
     position:absolute;
     z-index:500;
+    @media (max-width:676px) {
+      font-size:18px;
+    }
   }
   .home-hero-nav {
     color:$clr-white;
@@ -117,6 +126,9 @@ main {
           text-decoration:none;
           font-size:52px;
           position:relative;
+          @media (max-width:676px) {
+            font-size:18px;
+          }
           &:before {
             content:'';
             position:absolute;
@@ -173,6 +185,10 @@ main {
       fill:none;
       stroke-width:2.5px;
       stroke:$clr-white;
+      @media (max-width:676px) {
+        transform:scale(.5);
+        transform-origin:center center;
+      }
     }
   }
   .content {
@@ -193,6 +209,9 @@ main {
       display:inline-block;
       line-height:.6;
       transition:all 1s ease;
+      @media (max-width:676px) {
+        border-bottom:5px $clr-white solid;
+      }
     }
     svg {
       fill:$clr-white;
@@ -247,8 +266,16 @@ main {
   transform:translateY(-50%) rotate(90deg) scale(1);
   transform-origin:center center;
   transition:all 1s ease;
+  @media (max-width:676px) {
+    left:-8px;
+    transform:translateY(-50%) rotate(90deg) scale(.5);
+  }
   &:hover {
     transform:translateY(-50%) rotate(90deg) scale(1.2);
+    @media (max-width:676px) {
+      left:-8px;
+      transform:translateY(-50%) rotate(90deg) scale(.5);
+    }
   }
 }
 
@@ -257,8 +284,16 @@ main {
   transform:translateY(-50%) rotate(-90deg) scale(1);
   transform-origin:center center;
   transition:all 1s ease;
+  @media (max-width:676px) {
+    right:-8px;
+    transform:translateY(-50%) rotate(-90deg) scale(.5);
+  }
   &:hover {
     transform:translateY(-50%) rotate(-90deg) scale(1.2);
+    @media (max-width:676px) {
+      right:-8px;
+      transform:translateY(-50%) rotate(-90deg) scale(.5);
+    }
   }
 }
 
@@ -274,15 +309,29 @@ main {
   width:100%;
   margin:0 auto;
   padding: inherit $base-spacing*5;
+  @media (max-width:676px) {
+    flex-wrap:wrap;
+    padding: inherit 0;
+  }
   &.row-bump-top {
     padding-top:100px;
+    @media (max-width:676px) {
+      padding-top:70px;
+    }
   }
   &.row-bump-bottom {
     padding-bottom:100px;
+    @media (max-width:676px) {
+      padding-top:70px;
+    }
   }
   .col-half {
     flex:1;
     padding:$base-spacing*5;
+    @media (max-width:676px) {
+      width:100% !important;
+      flex:100% !important;
+    }
   }
 }
 
@@ -318,6 +367,9 @@ main {
     bottom:0;
     background-color:rgba($clr-hotmetal,0);
     transition:all 1s ease;
+    @media (max-width:676px) {
+      background-color:rgba($clr-hotmetal,1);
+    }
   }
   &:hover {
     .about-hero-foot-overlay {

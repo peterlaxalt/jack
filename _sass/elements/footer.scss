@@ -28,6 +28,9 @@ footer {
     transition:all 1s ease;
     &:hover {
       transform:scale(1.15);
+      @media (max-width:676px) {
+        transform:scale(1);
+      }
     }
     h1 {
       font-size:82px;
@@ -35,11 +38,18 @@ footer {
       border-bottom:11px $clr-white solid;
       display:inline-block;
       margin:0 auto;
+      @media (max-width:676px) {
+        font-size:10vw;
+        border-bottom:5px $clr-white solid;
+      }
     }
     p {
       padding-top:$base-spacing*1.5;
       font-size:52px;
       text-align:center;
+      @media (max-width:676px) {
+        font-size:18px;
+      }
     }
   }
   .lmnt-footer-social {

@@ -9,11 +9,19 @@
     flex-wrap:nowrap;
     justify-content:flex-start;
     align-items:flex-start;
+    @media (max-width:676px) {
+      flex-wrap:wrap;
+    }
     .project-description {
       overflow:visible;
       flex:1;
       height:100%;
       padding:$base-spacing*5 $base-spacing*3;
+      @media (max-width:676px) {
+        flex:100%;
+        width:100%;
+        height:auto;
+      }
       h2 {
         font-size:30px;
       }
@@ -25,6 +33,10 @@
       .project-description-inner {
         position:sticky;
         top:$base-spacing*10;
+        @media (max-width:676px) {
+          position:relative;
+          top:auto;
+        }
         .project-share {
           span {
             display:block;
@@ -36,6 +48,21 @@
     }
     .project-images {
       flex:2;
+      @media (max-width:676px) {
+        flex:100%;
+        width:100%;
+        position:relative;
+        padding-bottom:100px;
+        &:after {
+          position:absolute;
+          content:'More Projects';
+          font-family: 'Brown', 'Helvetica', sans-serif;
+          bottom:10px;
+          left:50%;
+          transform:translateX(-50%);
+          color:$clr-white;
+        }
+      }
     }
   }
 }
@@ -82,5 +109,10 @@
     font-weight:bold;
     border-bottom:11px $clr-white solid;
     max-width:60%;
+    @media (max-width:676px) {
+      font-size:10vh;
+      max-width:100%;
+      padding:$base-spacing;
+    }
   }
 }
