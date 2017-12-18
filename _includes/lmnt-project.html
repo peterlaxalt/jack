@@ -19,10 +19,20 @@
 
     <div class="project-content">
       <div class="project-description">
-        <h2>
-          {{ page.subtitle }}
-        </h2>
-        {{ content }}
+        <div class="project-description-inner">
+          <h2>
+            {{ page.subtitle }}
+          </h2>
+          <p>
+            {{ content }}
+          </p>
+          <span class="project-share">
+            {% include svg-fb.html %}
+            {% include svg-ig.html %}
+            {% include svg-linkedin.html %}
+            {% include svg-twitter.html %}
+          </span>
+        </div>
       </div>
       <div class="project-images">
         {% for img in page.images %}
@@ -31,7 +41,15 @@
       </div>
     </div>
 
-    
+    <div class="gallery-footer-container">
+      <div class="gallery-footer-inner">
+        {% for post in site.posts | limit:3 %}
+          {% include lmnt-project-card.html third='true' %}
+        {% endfor %}
+      </div>
+    </div>
+
+
 
   </div>
 </article>
