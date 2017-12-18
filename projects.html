@@ -3,3 +3,10 @@ title: "Jack of All Trades"
 layout: main
 description: "Make cool shit."
 ---
+<div class="gallery-container">
+  <div class="gallery-inner">
+    {% for post in site.posts %}
+      {% include lmnt-project-card.html %}
+    {% endfor %}
+  </div>
+</div>
