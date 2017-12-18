@@ -2,7 +2,7 @@ title: Jack of All Trades
 email: pete@laxaltandmciver.co
 description: ""
 baseurl: "/jack" # the subpath of your site, e.g. /blog
-url: "http://suttermade.co" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://laxaltandmciver.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
