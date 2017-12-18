@@ -17,6 +17,21 @@
       </div>
     </div>
 
-    {{ content }}
+    <div class="project-content">
+      <div class="project-description">
+        <h2>
+          {{ page.subtitle }}
+        </h2>
+        {{ content }}
+      </div>
+      <div class="project-images">
+        {% for img in page.images %}
+          <img src="{{ img }}" alt="{{ page.title }}" />
+        {% endfor %}
+      </div>
+    </div>
+
+    
+
   </div>
 </article>

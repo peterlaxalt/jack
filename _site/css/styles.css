@@ -674,47 +674,48 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .gallery-container .gallery-inner .lmnt-project-card.lmnt-project-card-third {
-      width: 33.33333333%;
-      flex: 33.33333333%;
-      flex-grow: 0; }
-    .gallery-container .gallery-inner .lmnt-project-card.lmnt-project-card-half {
-      width: 50%;
-      flex: 50%;
-      flex-grow: 0; }
-    .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner {
-      min-height: 400px;
-      width: 100%; }
-      .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner a {
-        color: #ffffff; }
-        .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner a:hover {
-          color: #ffffff; }
-        .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner a:visited {
-          color: #ffffff; }
-        .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner a:focus {
-          color: #ffffff; }
-        .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner a:active {
-          color: #ffffff; }
-      .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay {
-        min-height: 400px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #ff6c46;
-        transition: all 1s ease;
-        padding: 30px;
-        opacity: 0; }
-        .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay:hover {
-          opacity: 1; }
-        .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay .lmnt-project-card-date {
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          font-size: 11px; }
-        .gallery-container .gallery-inner .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay .lmnt-project-card-title {
-          font-size: 24px; }
+
+.lmnt-project-card.lmnt-project-card-third {
+  width: 33.33333333%;
+  flex: 33.33333333%;
+  flex-grow: 0; }
+.lmnt-project-card.lmnt-project-card-half {
+  width: 50%;
+  flex: 50%;
+  flex-grow: 0; }
+.lmnt-project-card .lmnt-project-card-inner {
+  min-height: 400px;
+  width: 100%; }
+  .lmnt-project-card .lmnt-project-card-inner a {
+    color: #ffffff; }
+    .lmnt-project-card .lmnt-project-card-inner a:hover {
+      color: #ffffff; }
+    .lmnt-project-card .lmnt-project-card-inner a:visited {
+      color: #ffffff; }
+    .lmnt-project-card .lmnt-project-card-inner a:focus {
+      color: #ffffff; }
+    .lmnt-project-card .lmnt-project-card-inner a:active {
+      color: #ffffff; }
+  .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay {
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6c46;
+    transition: all 1s ease;
+    padding: 30px;
+    opacity: 0; }
+    .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay:hover {
+      opacity: 1; }
+    .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay .lmnt-project-card-date {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px; }
+    .lmnt-project-card .lmnt-project-card-inner .lmnt-project-card-overlay .lmnt-project-card-title {
+      font-size: 24px; }
 
 .project-wrap .project-inner {
   display: flex;
