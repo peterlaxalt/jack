@@ -1,3 +1,6 @@
+{% if include.share %}
+<a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank">
+{% endif %}
 
 <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
@@ -13,3 +16,7 @@
         </g>
     </g>
 </svg>
+
+{% if include.share %}
+</a>
+{% endif %}

@@ -1,0 +1,14 @@
+<div class="gallery-footer-container">
+  <div class="gallery-footer-inner">
+    {% for post in site.posts | limit:3 %}
+      {% include lmnt-project-card.html third='true' %}
+    {% endfor %}
+  </div>
+  <div class="gallery-footer-cta">
+    <a href="{{ site.baseurl }}/projects.html">
+      <h3>
+        View All Projects
+      </h3>
+    </a>
+  </div>
+</div>

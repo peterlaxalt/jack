@@ -27,10 +27,12 @@
             {{ content }}
           </p>
           <span class="project-share">
-            {% include svg-fb.html %}
-            {% include svg-ig.html %}
-            {% include svg-linkedin.html %}
-            {% include svg-twitter.html %}
+            <span>
+              Share
+            </span>
+            {% include svg-fb.html share="true" %}
+            {% include svg-linkedin.html share="true" %}
+            {% include svg-twitter.html share="true" %}
           </span>
         </div>
       </div>
@@ -46,6 +48,13 @@
         {% for post in site.posts | limit:3 %}
           {% include lmnt-project-card.html third='true' %}
         {% endfor %}
+      </div>
+      <div class="gallery-footer-cta">
+        <a href="{{ site.baseurl }}/projects.html">
+          <h3>
+            View All Projects
+          </h3>
+        </a>
       </div>
     </div>
 

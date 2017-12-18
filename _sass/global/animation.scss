@@ -1,4 +1,4 @@
-@keyframes fadein {
+@keyframes fadein-up {
   0% {
     opacity: 0;
     transform: translateY(50px);
@@ -10,43 +10,98 @@
 }
 
 .fadein {
-  -webkit-animation: fadein .5s 1;
-  -moz-animation:    fadein .5s 1;
-  -o-animation:      fadein .5s 1;
-  animation:         fadein .5s 1;
+  -webkit-animation: fadein-up .5s 1;
+  -moz-animation:    fadein-up .5s 1;
+  -o-animation:      fadein-up .5s 1;
+  animation:         fadein-up .5s 1;
 }
 
 .fadein-1-sec {
-  -webkit-animation: fadein 1s 1;
-  -moz-animation:    fadein 1s 1;
-  -o-animation:      fadein 1s 1;
-  animation:         fadein 1s 1;
+  -webkit-animation: fadein-up 1s 1;
+  -moz-animation:    fadein-up 1s 1;
+  -o-animation:      fadein-up 1s 1;
+  animation:         fadein-up 1s 1;
 }
 
 .fadein-1-5-sec {
-  -webkit-animation: fadein 1.5s 1;
-  -moz-animation:    fadein 1.5s 1;
-  -o-animation:      fadein 1.5s 1;
-  animation:         fadein 1.5s 1;
+  -webkit-animation: fadein-up 1.5s 1;
+  -moz-animation:    fadein-up 1.5s 1;
+  -o-animation:      fadein-up 1.5s 1;
+  animation:         fadein-up 1.5s 1;
 }
 
 .fadein-2-sec {
-  -webkit-animation: fadein 2s 1;
-  -moz-animation:    fadein 2s 1;
-  -o-animation:      fadein 2s 1;
-  animation:         fadein 2s 1;
+  -webkit-animation: fadein-up 2s 1;
+  -moz-animation:    fadein-up 2s 1;
+  -o-animation:      fadein-up 2s 1;
+  animation:         fadein-up 2s 1;
 }
 
 .fadein-2-5-sec {
-  -webkit-animation: fadein 2.5s 1;
-  -moz-animation:    fadein 2.5s 1;
-  -o-animation:      fadein 2.5s 1;
-  animation:         fadein 2.5s 1;
+  -webkit-animation: fadein-up 2.5s 1;
+  -moz-animation:    fadein-up 2.5s 1;
+  -o-animation:      fadein-up 2.5s 1;
+  animation:         fadein-up 2.5s 1;
 }
 
 .fadein-3-sec {
-  -webkit-animation: fadein 3s 1;
-  -moz-animation:    fadein 3s 1;
-  -o-animation:      fadein 3s 1;
-  animation:         fadein 3s 1;
+  -webkit-animation: fadein-up 3s 1;
+  -moz-animation:    fadein-up 3s 1;
+  -o-animation:      fadein-up 3s 1;
+  animation:         fadein-up 3s 1;
+}
+
+// incremental fade
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+$inc-fade-base:1;
+
+.inc-fade-speed-1 {
+  -webkit-animation: fadein ($inc-fade-base)+s 1;
+  -moz-animation:    fadein ($inc-fade-base)+s 1;
+  -o-animation:      fadein ($inc-fade-base)+s 1;
+  animation:         fadein ($inc-fade-base)+s 1;
+}
+
+.inc-fade-speed-2 {
+  -webkit-animation: fadein (($inc-fade-base)+1)+s 1;
+  -moz-animation:    fadein (($inc-fade-base)+1)+s 1;
+  -o-animation:      fadein (($inc-fade-base)+1)+s 1;
+  animation:         fadein (($inc-fade-base)+1)+s 1;
+}
+
+.inc-fade-speed-3 {
+  -webkit-animation: fadein (($inc-fade-base)+2)+s 1;
+  -moz-animation:    fadein (($inc-fade-base)+2)+s 1;
+  -o-animation:      fadein (($inc-fade-base)+2)+s 1;
+  animation:         fadein (($inc-fade-base)+2)+s 1;
+}
+
+.inc-fade-speed-4 {
+  -webkit-animation: fadein (($inc-fade-base)+3)+s 1;
+  -moz-animation:    fadein (($inc-fade-base)+3)+s 1;
+  -o-animation:      fadein (($inc-fade-base)+3)+s 1;
+  animation:         fadein (($inc-fade-base)+3)+s 1;
+}
+
+.inc-fade-speed-5 {
+  -webkit-animation: fadein (($inc-fade-base)+4)+s 1;
+  -moz-animation:    fadein (($inc-fade-base)+4)+s 1;
+  -o-animation:      fadein (($inc-fade-base)+4)+s 1;
+  animation:         fadein (($inc-fade-base)+4)+s 1;
+}
+
+.inc-fade-speed-6 {
+  -webkit-animation: fadein (($inc-fade-base)+5)+s 1;
+  -moz-animation:    fadein (($inc-fade-base)+5)+s 1;
+  -o-animation:      fadein (($inc-fade-base)+5)+s 1;
+  animation:         fadein (($inc-fade-base)+5)+s 1;
 }

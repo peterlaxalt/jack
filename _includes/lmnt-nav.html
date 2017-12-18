@@ -1,8 +1,8 @@
+{% assign current = page.url | downcase | split: '/' %}
+
 <nav>
   <div class="lmnt-nav-item">
-    <a href="{{site.baseurl}}/projects.html" class="lmnt-nav-active">
-      Projects
-    </a>
+    <a href='{{site.baseurl}}/projects.html' {% if current[1] == 'projects.html' %}class='lmnt-nav-link lmnt-nav-active'{% else %}class='lmnt-nav-link'{% endif %}>Projects</a>
   </div>
   <div class="lmnt-nav-item">
     <a href="{{site.baseurl}}/index.html">
@@ -10,8 +10,6 @@
     </a>
   </div>
   <div class="lmnt-nav-item">
-    <a href="{{site.baseurl}}/about.html" class="lmnt-nav-link">
-      About
-    </a>
+    <a href='{{site.baseurl}}/about.html' {% if current[1] == 'about.html' %}class='lmnt-nav-link lmnt-nav-active'{% else %}class='lmnt-nav-link'{% endif %}>About</a>
   </div>
 </nav>

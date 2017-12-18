@@ -1,5 +1,85 @@
 ---
-title: "Jack of All Trades"
+title: "Jack Sutter"
 layout: main
-description: "Make cool shit."
+bio: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore."
+clients: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore."
+awards: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore."
+slides:
+- 'https://source.unsplash.com/1000x1000/?cats'
+- 'https://source.unsplash.com/1000x1000/?cows'
+- 'https://source.unsplash.com/1000x1000/?milk'
+- 'https://source.unsplash.com/1000x1000/?food'
 ---
+
+<div class="about-hero inc-fade-speed-2">
+
+  <div class="content">
+    <h1>
+      Make Cool Shit.
+    </h1>
+  </div>
+  <div class="page-hero-scroll-down">
+    <span>
+      Read More
+    </span>
+    <span>
+      {% include svg-arrow.html %}
+    </span>
+  </div>
+
+  <div class="about-hero-slider">
+
+    {% for slide in page.slides %}
+      <div class="about-hero-slide" style="background-image:url('{{slide}}');background-size:cover;background-repeat:no-repeat;"></div>
+    {% endfor %}
+
+  </div>
+
+</div>
+
+<div class="row row-bump-top row-bump-bottom about">
+  <div class="col-half">
+    <h1>
+      Jack Sutter
+    </h1>
+    <p>
+      {{ page.bio }}
+      <span class="page-share">
+        {% include svg-fb.html %}
+        {% include svg-ig.html %}
+        {% include svg-linkedin.html %}
+        {% include svg-twitter.html %}
+      </span>
+    </p>
+    <p>
+      <span>
+        Clients
+      </span>
+      {{ page.awards }}
+    </p>
+    <p>
+      <span>
+        Awards & Mentions
+      </span>
+      {{ page.bio }}
+    </p>
+
+  </div>
+  <div class="col-half badge">
+    <img src="{{site.baseurl}}/assets/img-jacktrades.png" />
+  </div>
+</div>
+
+<script>
+$('.about-hero-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  autoplay: true,
+  speed: 400,
+  autoplaySpeed: 3000
+});
+</script>
+
+{% include lmnt-gallery-footer.html %}
