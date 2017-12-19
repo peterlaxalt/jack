@@ -30,8 +30,8 @@ fields:
   hidden: false
   default: ''
 - type: image_gallery
-  name: images
-  label: images
-- type: image_gallery
   name: cover
   label: Cover
+- type: image_gallery
+  name: images
+  label: images
