@@ -11,7 +11,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: subtitle
   label: Subtitle
@@ -21,7 +21,7 @@ fields:
 - name: date
   label: Date
   type: datetime
-  hidden: false
+  hidden: true
   default: ''
 - name: categories
   label: Categories
