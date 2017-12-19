@@ -33,8 +33,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: images
-  label: Images
-  type: list
-  hidden: false
-  default: ''
+- type: image_gallery
+  name: images
+  label: images
