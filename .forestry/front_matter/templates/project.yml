@@ -13,7 +13,7 @@ fields:
   label: Layout
   type: text
   hidden: true
-  default: ''
+  default: project
 - name: subtitle
   label: Subtitle
   type: text
