@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/chicken-the-egg.md
 hide_body: false
 fields:
 - name: title
