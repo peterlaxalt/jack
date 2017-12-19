@@ -38,7 +38,7 @@
       </div>
       <div class="project-images">
         {% for img in page.images %}
-          <img src="{{ img }}" alt="{{ page.title }}" />
+          <img src="{{site.baseurl}}{{ img }}" alt="{{ page.title }}" />
         {% endfor %}
       </div>
     </div>
