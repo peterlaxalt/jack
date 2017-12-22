@@ -49,7 +49,9 @@
     <div class="gallery-footer-container">
       <div class="gallery-footer-inner">
         {% for post in site.posts | limit:3 %}
-          {% include lmnt-project-card.html third='true' %}
+          {% if post.title != page.title %}
+            {% include lmnt-project-card.html third='true' %}
+          {% endif %}
         {% endfor %}
       </div>
       <div class="gallery-footer-cta">
