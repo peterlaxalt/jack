@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 fields:
 - name: title
   label: Title
@@ -9,7 +9,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: bio
   label: Bio
@@ -26,8 +26,10 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: slides
-  label: Slides
-  type: list
-  hidden: false
-  default: ''
+- type: image_gallery
+  name: slides
+  label: slides
+  default:
+  - "/uploads/2017/12/19/Screenshot 2017-12-18 17.29.41.png"
+  - "/_site/uploads/2017/12/19/Screenshot 2017-12-18 17.29.50.png"
+  - "/_site/uploads/2017/12/19/Screenshot 2017-12-18 17.30.06.png"
