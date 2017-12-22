@@ -1,4 +1,6 @@
 ---
+pages:
+- about.html
 hide_body: true
 fields:
 - name: title
