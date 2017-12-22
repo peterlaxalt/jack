@@ -1022,16 +1022,13 @@ main {
 .project-wrap .project-content {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start; }
+  flex-wrap: nowrap; }
   @media (max-width: 676px) {
     .project-wrap .project-content {
       flex-wrap: wrap; } }
   .project-wrap .project-content .project-description {
     overflow: visible;
     flex: 1;
-    height: 100%;
     padding: 50px 30px; }
     @media (max-width: 676px) {
       .project-wrap .project-content .project-description {
@@ -1090,6 +1087,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    z-index: 400;
     padding-bottom: 30px; }
     .page-hero .page-hero-scroll-down span:first-child {
       padding-bottom: 20px; }
@@ -1102,14 +1100,22 @@ main {
     justify-content: center;
     align-items: center; }
   .page-hero h1 {
-    font-size: 15vh;
+    font-size: 14vh;
     text-align: center;
     color: #ffffff;
     font-weight: bold;
-    border-bottom: 11px #ffffff solid;
-    max-width: 60%; }
+    max-width: 80%;
+    z-index: 400; }
     @media (max-width: 676px) {
       .page-hero h1 {
         font-size: 10vh;
         max-width: 100%;
         padding: 10px; } }
+  .page-hero .lmnt-page-hero-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 300; }
