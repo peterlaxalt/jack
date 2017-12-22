@@ -382,6 +382,9 @@ textarea {
 ::selection {
   background: #FF6C46; }
 
+body {
+  background-color: #000000; }
+
 @font-face {
   font-family: 'Brown';
   font-style: normal;
@@ -977,7 +980,7 @@ main {
 .lmnt-project-card.lmnt-project-card-half {
   width: 50%;
   flex: 50%;
-  flex-grow: 0; }
+  flex-grow: 1; }
   @media (max-width: 676px) {
     .lmnt-project-card.lmnt-project-card-half {
       flex: 100%;

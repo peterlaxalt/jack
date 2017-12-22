@@ -51,7 +51,7 @@
   &.lmnt-project-card-half {
     width:50%;
     flex:50%;
-    flex-grow:0;
+    flex-grow:1;
     @media (max-width:676px) {
       flex:100%;
       width:100%;

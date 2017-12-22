@@ -52,7 +52,7 @@ description: "Make Cool shit."
 
 <div class="gallery-footer-container" style="padding-top:0px;">
   <div class="gallery-footer-inner">
-    {% for post in site.posts | limit:3 %}
+    {% for post in site.posts limit:3 %}
       {% include lmnt-project-card.html third='true' %}
     {% endfor %}
   </div>
