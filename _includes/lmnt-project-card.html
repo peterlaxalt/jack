@@ -1,7 +1,7 @@
 {% assign fade-count = fade-count | plus: 1 %}
 <div class="lmnt-project-card inc-fade-speed-{{fade-count}} {% unless include.third %}lmnt-project-card-half{% else %}lmnt-project-card-third{% endunless %}">
   <div class="lmnt-project-card-inner" style="background-image:url('{{ site.baseurl }}{{ post.cover }}');background-size:cover;background-repeat:no-repeat;">
-    <a href="{{ site.baseurl }}/{{ post.url }}">
+    <a href="{{ post.url }}">
       <div class="lmnt-project-card-overlay">
         <span class="lmnt-project-card-date">
           {{ post.date | date: "%b %d, %Y" }}
