@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 fields:
 - name: title
   label: Title
@@ -9,7 +9,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: description
   label: Description
