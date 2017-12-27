@@ -1,0 +1,18 @@
+---
+hide_body: true
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
