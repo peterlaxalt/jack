@@ -9,6 +9,13 @@ images:
 - "/uploads/2017/12/19/Screenshot 2017-12-18 17.29.46.png"
 subtitle: Signage for Dematologists
 layout: project
-categories: []
+categories:
+- metal
+- cnc
+- signage
+- reno
+- architectual
+- carson
+- nevada
 ---
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
